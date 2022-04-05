@@ -12,7 +12,7 @@ def as_array(out_data):
 
 
 if __name__ == '__main__':
-    file_name = input("Enter Input filename (default: 'value.csv')") or "value.csv"
+    file_name = input("Enter Input filename (default: 'values.csv')") or "values.csv"
     output_name = input("Enter Output filename (default: 'output.json')") or "output.json"
     output_type = input("What type of file would you like? dict, list").lower() or "list"
     data = pd.read_csv(os.path.join('input', file_name))
